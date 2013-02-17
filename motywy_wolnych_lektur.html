@@ -3,7 +3,7 @@
 <style>
 
 .node_circle {
-  stroke: #000;
+  stroke: #777;
   stroke-width: 1.0px;
 }
 
@@ -20,7 +20,7 @@
 var width = 960,
     height = 600;
 
-var color = d3.scale.category20();
+var color = d3.scale.category10();
 
 var force = d3.layout.force()
     .charge( function(d) { return -35 * Math.sqrt(d.count)} )
@@ -52,7 +52,7 @@ d3.json("motywy_wolnych_lektur.json", function(error, graph) {
   node.append("circle")
       .attr("class", "node_circle")
       .attr("r", function(d) { return 0.5 * Math.sqrt(d.count); })
-      .style("fill", function(d, i){ return color(i % 20) } )
+      .style("fill", function(d, i){ return color(i % 10) } )
       .on("mouseover", function(d) { mouseover_node(d) })
       .on("mouseout", function(d) { mouseout_node(d) });
 
