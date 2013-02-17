@@ -14,7 +14,7 @@
 
 </style>
 <body>
-<script src="d3.v3.js"></script>
+<script src="d3.v3.min.js"></script>
 <script>
 
 var width = 960,
@@ -90,42 +90,43 @@ d3.json("motywy_wolnych_lektur.json", function(error, graph) {
           return false
         }
       })
-      .transition()
-        .duration(500)
+     // .transition()
+       // .duration(500)
         // .style("stroke", "#000")
         .style("stroke-opacity", 1);
 
     node.filter(function(d){ return neighbors[d.index] }).select("circle")
-      .transition()
-        .duration(500)
+    //  .transition()
+       // .duration(500)
         .style("stroke-width", 3);
 
     node.filter(function(d){ return !neighbors[d.index] }).select("text")
-      .transition()
-        .duration(500)
+    //  .transition()
+       // .duration(500)
         .style("fill-opacity", 0.2);
 
     node.filter(function(d){ return neighbors[d.index] }).select("text")
-      .transition()
-        .duration(500)
+    //  .transition()
+       // .duration(500)
         .attr("font-size", 16)
 
   };
 
   var mouseout_node = function(z){ 
-    link.transition()
-      .duration(200)
+    link
+    // .transition()
+      // .duration(200)
       // .style("stroke", "#999")
       .style("stroke-opacity", 0.2);
 
     node.select("circle")
-      .transition()
-        .duration(200)
+      // .transition()
+        // .duration(200)
         .style("stroke-width", 1)
 
     node.select("text")
-      .transition()
-        .duration(200)
+      // .transition()
+        // .duration(200)
         .attr("font-size", 10)
         .style("fill-opacity", 1)
 
