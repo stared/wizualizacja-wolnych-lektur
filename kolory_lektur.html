@@ -2,20 +2,25 @@
 <meta charset="utf-8">
 <style>
 
-.colour {
+.color_point {
   stroke: #000;
   stroke-width: 0.5px;
 }
 
-.lightness {
+.lightness_point {
   stroke: #000;
   stroke-width: 0.5px;
 }
 
-.saturation {
+.aux_line {
+  stroke: #777;
+  stroke-width: 2px;
+}
+
+/*.saturation {
   stroke: #000;
   stroke-width: 0.5px;
-}
+}*/
 
 /*.link {
   stroke: #999;
@@ -24,11 +29,11 @@
 */
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.v3.min.js"></script>
 <script>
 
-var width = 960,
-    height = 500;
+var width = 900,
+    height = 600;
 
 // var color = d3.scale.category20();
 
@@ -43,7 +48,7 @@ d3.json("kolory_lektur_1.json", function(error, data) {
   var rgb2x = function(r, g, b) {
     var tot = r + g + b
     if( tot != 0 ){
-        return (0 * r + 0.5 * g + 1 * b) / tot
+        return (g / 2 + b) / tot // (0 * r + 0.5 * g + 1 * b) / tot
     } else {
       return 0.5
     }
@@ -52,9 +57,9 @@ d3.json("kolory_lektur_1.json", function(error, data) {
   var rgb2y = function(r, g, b) {
     var tot = r + g + b
     if( tot != 0 ){
-        return (1 * r + 0 * g + 1 * b) / tot
+        return (Math.sqrt(3) / 2) * (r + b) / tot  //  (Math.sqrt(3)/2 * r + 0 * g + Math.sqrt(3)/2 * b) / tot
     } else {
-      return 0.666
+      return 1 / Math.sqrt(3)
     }
   };
 
@@ -63,43 +68,72 @@ d3.json("kolory_lektur_1.json", function(error, data) {
   };
 
   // somewhat a hand-made function
-  var rgb2s = function(r, g, b) {
-    var c = (Math.max(r, g, b) - Math.min(r, g, b)) / 255
-    if(c == 0) {
-      return 0
-    } else {
-      var l = rgb2l(r, g, b)
-      return (2/3) * c / (1 - Math.abs(2 *l - 1))
-    }
-  };
+  // var rgb2s = function(r, g, b) {
+  //   var c = (Math.max(r, g, b) - Math.min(r, g, b)) / 255
+  //   if(c == 0) {
+  //     return 0
+  //   } else {
+  //     var l = rgb2l(r, g, b)
+  //     return (2/3) * c / (1 - Math.abs(2 *l - 1))
+  //   }
+  // };
 
-  var points = svg.selectAll(".colour")
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 330 * rgb2x(1, 0, 0))
+    .attr("y1", 50 + 330 * rgb2y(1, 0, 0))
+    .attr("x2", 50 + 330 * rgb2x(0, 1, 0))
+    .attr("y2", 50 + 330 * rgb2y(0, 1, 0))
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 330 * rgb2x(0, 1, 0))
+    .attr("y1", 50 + 330 * rgb2y(0, 1, 0))
+    .attr("x2", 50 + 330 * rgb2x(0, 0, 1))
+    .attr("y2", 50 + 330 * rgb2y(0, 0, 1))
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 330 * rgb2x(0, 0, 1))
+    .attr("y1", 50 + 330 * rgb2y(0, 0, 1))
+    .attr("x2", 50 + 330 * rgb2x(1, 0, 0))
+    .attr("y2", 50 + 330 * rgb2y(1, 0, 0))
+
+  var points = svg.selectAll(".color_point")
       .data(data["w-pustynii-i-w-puszczy"])
     .enter().append("circle")
-      .attr("class", "colour")
+      .attr("class", "color_point")
       .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
-      .attr("cx", function(d) { return 50 + 300 * rgb2x(d.r, d.g, d.b); })
-      .attr("cy", function(d) { return 50 + 300 * rgb2y(d.r, d.g, d.b); })
-      .style("fill", function(d) { return d.hex; });
+      .attr("cx", function(d) { return 50 + 330 * rgb2x(d.r, d.g, d.b); })
+      .attr("cy", function(d) { return 50 + 330 * rgb2y(d.r, d.g, d.b); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
 
+
+  svg.append("line")
+      .attr("class", "aux_line")
+      .attr("x1", 500)
+      .attr("y1", 50)
+      .attr("x2", 500)
+      .attr("y2", 50 + 300)
 
   var lightness = svg.selectAll(".lightness")
       .data(data["w-pustynii-i-w-puszczy"])
     .enter().append("circle")
-      .attr("class", "lightness")
+      .attr("class", "lightness_point")
       .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
       .attr("cx", 500)
       .attr("cy", function(d) { return 50 + 300 * (1 - rgb2l(d.r, d.g, d.b)); })
-      .style("fill", function(d) { return d.hex; });
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
 
 
-  var saturation = svg.selectAll(".saturation")
-      .data(data["w-pustynii-i-w-puszczy"])
-    .enter().append("circle")
-      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
-      .attr("cx", 600)
-      .attr("cy", function(d) { return 50 + 300 * (1 - rgb2s(d.r, d.g, d.b)); })
-      .style("fill", function(d) { return d.hex; });
+  // var saturation = svg.selectAll(".saturation")
+  //     .data(data["w-pustynii-i-w-puszczy"])
+  //   .enter().append("circle")
+  //     .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+  //     .attr("cx", 600)
+  //     .attr("cy", function(d) { return 50 + 300 * (1 - rgb2s(d.r, d.g, d.b)); })
+  //     .style("fill", function(d) { return d.hex; });
 
 
   // var node = svg.selectAll(".node")
