@@ -2,618 +2,987 @@
   "nodes": [
     {
       "count": 1695,
+      "epika": 1187,
       "name": "kobieta",
-      "display": "Kobieta"
+      "liryka": 307,
+      "display": "Kobieta",
+      "dramat": 201
     },
     {
       "count": 1484,
+      "epika": 808,
       "name": "milosc",
-      "display": "Mi\u0142o\u015b\u0107"
+      "liryka": 473,
+      "display": "Mi\u0142o\u015b\u0107",
+      "dramat": 203
     },
     {
       "count": 1201,
+      "epika": 544,
       "name": "smierc",
-      "display": "\u015amier\u0107"
+      "liryka": 519,
+      "display": "\u015amier\u0107",
+      "dramat": 138
     },
     {
       "count": 998,
+      "epika": 770,
       "name": "obyczaje",
-      "display": "Obyczaje"
+      "liryka": 117,
+      "display": "Obyczaje",
+      "dramat": 111
     },
     {
       "count": 818,
+      "epika": 411,
       "name": "kondycja-ludzka",
-      "display": "Kondycja ludzka"
+      "liryka": 299,
+      "display": "Kondycja ludzka",
+      "dramat": 108
     },
     {
       "count": 683,
+      "epika": 577,
       "name": "pozycja-spoleczna",
-      "display": "Pozycja spo\u0142eczna"
+      "liryka": 37,
+      "display": "Pozycja spo\u0142eczna",
+      "dramat": 69
     },
     {
       "count": 683,
+      "epika": 565,
       "name": "mezczyzna",
-      "display": "M\u0119\u017cczyzna"
+      "liryka": 53,
+      "display": "M\u0119\u017cczyzna",
+      "dramat": 65
     },
     {
       "count": 662,
+      "epika": 214,
       "name": "bog",
-      "display": "B\u00f3g"
+      "liryka": 352,
+      "display": "B\u00f3g",
+      "dramat": 96
     },
     {
       "count": 634,
+      "epika": 521,
       "name": "szlachcic",
-      "display": "Szlachcic"
+      "liryka": 43,
+      "display": "Szlachcic",
+      "dramat": 70
     },
     {
       "count": 598,
+      "epika": 441,
       "name": "sluga",
-      "display": "S\u0142uga"
+      "liryka": 40,
+      "display": "S\u0142uga",
+      "dramat": 117
     },
     {
       "count": 584,
+      "epika": 458,
       "name": "religia",
-      "display": "Religia"
+      "liryka": 102,
+      "display": "Religia",
+      "dramat": 24
     },
     {
       "count": 560,
+      "epika": 443,
       "name": "pieniadz",
-      "display": "Pieni\u0105dz"
+      "liryka": 68,
+      "display": "Pieni\u0105dz",
+      "dramat": 49
     },
     {
       "count": 557,
+      "epika": 400,
       "name": "wladza",
-      "display": "W\u0142adza"
+      "liryka": 40,
+      "display": "W\u0142adza",
+      "dramat": 117
     },
     {
       "count": 545,
+      "epika": 465,
       "name": "praca",
-      "display": "Praca"
+      "liryka": 52,
+      "display": "Praca",
+      "dramat": 28
     },
     {
       "count": 534,
+      "epika": 373,
       "name": "walka",
-      "display": "Walka"
+      "liryka": 134,
+      "display": "Walka",
+      "dramat": 27
     },
     {
       "count": 532,
+      "epika": 231,
       "name": "sen",
-      "display": "Sen"
+      "liryka": 237,
+      "display": "Sen",
+      "dramat": 64
     },
     {
       "count": 527,
+      "epika": 406,
       "name": "malzenstwo",
-      "display": "Ma\u0142\u017ce\u0144stwo"
+      "liryka": 32,
+      "display": "Ma\u0142\u017ce\u0144stwo",
+      "dramat": 89
     },
     {
       "count": 519,
+      "epika": 219,
       "name": "cierpienie",
-      "display": "Cierpienie"
+      "liryka": 219,
+      "display": "Cierpienie",
+      "dramat": 81
     },
     {
       "count": 510,
+      "epika": 327,
       "name": "dziecko",
-      "display": "Dziecko"
+      "liryka": 107,
+      "display": "Dziecko",
+      "dramat": 76
     },
     {
       "count": 508,
+      "epika": 443,
       "name": "wojna",
-      "display": "Wojna"
+      "liryka": 50,
+      "display": "Wojna",
+      "dramat": 15
     },
     {
       "count": 477,
+      "epika": 198,
       "name": "cialo",
-      "display": "Cia\u0142o"
+      "liryka": 241,
+      "display": "Cia\u0142o",
+      "dramat": 38
     },
     {
       "count": 443,
+      "epika": 317,
       "name": "ojciec",
-      "display": "Ojciec"
+      "liryka": 51,
+      "display": "Ojciec",
+      "dramat": 75
     },
     {
       "count": 432,
+      "epika": 348,
       "name": "zolnierz",
-      "display": "\u017bo\u0142nierz"
+      "liryka": 57,
+      "display": "\u017bo\u0142nierz",
+      "dramat": 27
     },
     {
       "count": 428,
+      "epika": 241,
       "name": "lzy",
-      "display": "\u0141zy"
+      "liryka": 136,
+      "display": "\u0141zy",
+      "dramat": 51
     },
     {
       "count": 420,
+      "epika": 273,
       "name": "zona",
-      "display": "\u017bona"
+      "liryka": 80,
+      "display": "\u017bona",
+      "dramat": 67
     },
     {
       "count": 412,
+      "epika": 319,
       "name": "miasto",
-      "display": "Miasto"
+      "liryka": 84,
+      "display": "Miasto",
+      "dramat": 9
     },
     {
       "count": 412,
+      "epika": 321,
       "name": "chlop",
-      "display": "Ch\u0142op"
+      "liryka": 38,
+      "display": "Ch\u0142op",
+      "dramat": 53
     },
     {
       "count": 406,
+      "epika": 231,
       "name": "slowo",
-      "display": "S\u0142owo"
+      "liryka": 109,
+      "display": "S\u0142owo",
+      "dramat": 66
     },
     {
       "count": 403,
+      "epika": 295,
       "name": "zdrada",
-      "display": "Zdrada"
+      "liryka": 60,
+      "display": "Zdrada",
+      "dramat": 48
     },
     {
       "count": 401,
+      "epika": 332,
       "name": "choroba",
-      "display": "Choroba"
+      "liryka": 53,
+      "display": "Choroba",
+      "dramat": 16
     },
     {
       "count": 401,
+      "epika": 316,
       "name": "bogactwo",
-      "display": "Bogactwo"
+      "liryka": 69,
+      "display": "Bogactwo",
+      "dramat": 16
     },
     {
       "count": 401,
+      "epika": 220,
       "name": "ptak",
-      "display": "Ptak"
+      "liryka": 138,
+      "display": "Ptak",
+      "dramat": 43
     },
     {
       "count": 396,
+      "epika": 215,
       "name": "matka",
-      "display": "Matka"
+      "liryka": 73,
+      "display": "Matka",
+      "dramat": 108
     },
     {
       "count": 394,
+      "epika": 239,
       "name": "starosc",
-      "display": "Staro\u015b\u0107"
+      "liryka": 105,
+      "display": "Staro\u015b\u0107",
+      "dramat": 50
     },
     {
       "count": 386,
+      "epika": 250,
       "name": "ojczyzna",
-      "display": "Ojczyzna"
+      "liryka": 104,
+      "display": "Ojczyzna",
+      "dramat": 32
     },
     {
       "count": 373,
+      "epika": 215,
       "name": "strach",
-      "display": "Strach"
+      "liryka": 97,
+      "display": "Strach",
+      "dramat": 61
     },
     {
       "count": 372,
+      "epika": 263,
       "name": "zemsta",
-      "display": "Zemsta"
+      "liryka": 46,
+      "display": "Zemsta",
+      "dramat": 63
     },
     {
       "count": 370,
+      "epika": 98,
       "name": "duch",
-      "display": "Duch"
+      "liryka": 177,
+      "display": "Duch",
+      "dramat": 95
     },
     {
       "count": 369,
+      "epika": 169,
       "name": "grzech",
-      "display": "Grzech"
+      "liryka": 128,
+      "display": "Grzech",
+      "dramat": 72
     },
     {
       "count": 362,
+      "epika": 225,
       "name": "krew",
-      "display": "Krew"
+      "liryka": 77,
+      "display": "Krew",
+      "dramat": 60
     },
     {
       "count": 362,
+      "epika": 191,
       "name": "kara",
-      "display": "Kara"
+      "liryka": 95,
+      "display": "Kara",
+      "dramat": 76
     },
     {
       "count": 361,
+      "epika": 126,
       "name": "poeta",
-      "display": "Poeta"
+      "liryka": 172,
+      "display": "Poeta",
+      "dramat": 63
     },
     {
       "count": 358,
+      "epika": 298,
       "name": "jedzenie",
-      "display": "Jedzenie"
+      "liryka": 39,
+      "display": "Jedzenie",
+      "dramat": 21
     },
     {
       "count": 357,
+      "epika": 287,
       "name": "rycerz",
-      "display": "Rycerz"
+      "liryka": 46,
+      "display": "Rycerz",
+      "dramat": 24
     },
     {
       "count": 355,
+      "epika": 204,
       "name": "mlodosc",
-      "display": "M\u0142odo\u015b\u0107"
+      "liryka": 84,
+      "display": "M\u0142odo\u015b\u0107",
+      "dramat": 67
     },
     {
       "count": 352,
+      "epika": 207,
       "name": "ksiadz",
-      "display": "Ksi\u0105dz"
+      "liryka": 68,
+      "display": "Ksi\u0105dz",
+      "dramat": 77
     },
     {
       "count": 350,
+      "epika": 265,
       "name": "krol",
-      "display": "Kr\u00f3l"
+      "liryka": 31,
+      "display": "Kr\u00f3l",
+      "dramat": 54
     },
     {
       "count": 347,
+      "epika": 158,
       "name": "obraz-swiata",
-      "display": "Obraz \u015bwiata"
+      "liryka": 137,
+      "display": "Obraz \u015bwiata",
+      "dramat": 52
     },
     {
       "count": 337,
+      "epika": 304,
       "name": "polityka",
-      "display": "Polityka"
+      "liryka": 22,
+      "display": "Polityka",
+      "dramat": 11
     },
     {
       "count": 335,
+      "epika": 163,
       "name": "los",
-      "display": "Los"
+      "liryka": 111,
+      "display": "Los",
+      "dramat": 61
     },
     {
       "count": 331,
+      "epika": 278,
       "name": "stroj",
-      "display": "Str\u00f3j"
+      "liryka": 35,
+      "display": "Str\u00f3j",
+      "dramat": 18
     },
     {
       "count": 330,
+      "epika": 156,
       "name": "modlitwa",
-      "display": "Modlitwa"
+      "liryka": 126,
+      "display": "Modlitwa",
+      "dramat": 48
     },
     {
       "count": 328,
+      "epika": 147,
       "name": "poezja",
-      "display": "Poezja"
+      "liryka": 133,
+      "display": "Poezja",
+      "dramat": 48
     },
     {
       "count": 326,
+      "epika": 147,
       "name": "trup",
-      "display": "Trup"
+      "liryka": 127,
+      "display": "Trup",
+      "dramat": 52
     },
     {
       "count": 319,
+      "epika": 237,
       "name": "dom",
-      "display": "Dom"
+      "liryka": 57,
+      "display": "Dom",
+      "dramat": 25
     },
     {
       "count": 319,
+      "epika": 227,
       "name": "smiech",
-      "display": "\u015amiech"
+      "liryka": 56,
+      "display": "\u015amiech",
+      "dramat": 36
     },
     {
       "count": 318,
+      "epika": 222,
       "name": "bieda",
-      "display": "Bieda"
+      "liryka": 81,
+      "display": "Bieda",
+      "dramat": 15
     },
     {
       "count": 316,
+      "epika": 204,
       "name": "przemiana",
-      "display": "Przemiana"
+      "liryka": 73,
+      "display": "Przemiana",
+      "dramat": 39
     },
     {
       "count": 314,
+      "epika": 233,
       "name": "czary",
-      "display": "Czary"
+      "liryka": 56,
+      "display": "Czary",
+      "dramat": 25
     },
     {
       "count": 313,
+      "epika": 238,
       "name": "przemoc",
-      "display": "Przemoc"
+      "liryka": 35,
+      "display": "Przemoc",
+      "dramat": 40
     },
     {
       "count": 309,
+      "epika": 251,
       "name": "podstep",
-      "display": "Podst\u0119p"
+      "liryka": 11,
+      "display": "Podst\u0119p",
+      "dramat": 47
     },
     {
       "count": 308,
+      "epika": 132,
       "name": "kochanek",
-      "display": "Kochanek"
+      "liryka": 126,
+      "display": "Kochanek",
+      "dramat": 50
     },
     {
       "count": 301,
+      "epika": 203,
       "name": "maz",
-      "display": "M\u0105\u017c"
+      "liryka": 55,
+      "display": "M\u0105\u017c",
+      "dramat": 43
     },
     {
       "count": 300,
+      "epika": 132,
       "name": "natura",
-      "display": "Natura"
+      "liryka": 153,
+      "display": "Natura",
+      "dramat": 15
     },
     {
       "count": 298,
+      "epika": 210,
       "name": "syn",
-      "display": "Syn"
+      "liryka": 32,
+      "display": "Syn",
+      "dramat": 56
     },
     {
       "count": 296,
+      "epika": 215,
       "name": "madrosc",
-      "display": "M\u0105dro\u015b\u0107"
+      "liryka": 53,
+      "display": "M\u0105dro\u015b\u0107",
+      "dramat": 28
     },
     {
       "count": 294,
+      "epika": 214,
       "name": "szczescie",
-      "display": "Szcz\u0119\u015bcie"
+      "liryka": 52,
+      "display": "Szcz\u0119\u015bcie",
+      "dramat": 28
     },
     {
       "count": 291,
+      "epika": 213,
       "name": "zwierzeta",
-      "display": "Zwierz\u0119ta"
+      "liryka": 59,
+      "display": "Zwierz\u0119ta",
+      "dramat": 19
     },
     {
       "count": 290,
+      "epika": 209,
       "name": "nauka",
-      "display": "Nauka"
+      "liryka": 24,
+      "display": "Nauka",
+      "dramat": 57
     },
     {
       "count": 289,
+      "epika": 121,
       "name": "dusza",
-      "display": "Dusza"
+      "liryka": 121,
+      "display": "Dusza",
+      "dramat": 47
     },
     {
       "count": 286,
+      "epika": 72,
       "name": "przemijanie",
-      "display": "Przemijanie"
+      "liryka": 183,
+      "display": "Przemijanie",
+      "dramat": 31
     },
     {
       "count": 286,
+      "epika": 193,
       "name": "polak",
-      "display": "Polak"
+      "liryka": 52,
+      "display": "Polak",
+      "dramat": 41
     },
     {
       "count": 284,
+      "epika": 146,
       "name": "czas",
-      "display": "Czas"
+      "liryka": 103,
+      "display": "Czas",
+      "dramat": 35
     },
     {
       "count": 282,
+      "epika": 202,
       "name": "zabawa",
-      "display": "Zabawa"
+      "liryka": 51,
+      "display": "Zabawa",
+      "dramat": 29
     },
     {
       "count": 281,
+      "epika": 144,
       "name": "serce",
-      "display": "Serce"
+      "liryka": 80,
+      "display": "Serce",
+      "dramat": 57
     },
     {
       "count": 272,
+      "epika": 180,
       "name": "cnota",
-      "display": "Cnota"
+      "liryka": 58,
+      "display": "Cnota",
+      "dramat": 34
     },
     {
       "count": 265,
+      "epika": 185,
       "name": "pozory",
-      "display": "Pozory"
+      "liryka": 48,
+      "display": "Pozory",
+      "dramat": 32
     },
     {
       "count": 262,
+      "epika": 191,
       "name": "sprawiedliwosc",
-      "display": "Sprawiedliwo\u015b\u0107"
+      "liryka": 11,
+      "display": "Sprawiedliwo\u015b\u0107",
+      "dramat": 60
     },
     {
       "count": 260,
+      "epika": 132,
       "name": "oko",
-      "display": "Oko"
+      "liryka": 78,
+      "display": "Oko",
+      "dramat": 50
     },
     {
       "count": 253,
+      "epika": 183,
       "name": "ksiazka",
-      "display": "Ksi\u0105\u017cka"
+      "liryka": 44,
+      "display": "Ksi\u0105\u017cka",
+      "dramat": 26
     },
     {
       "count": 253,
+      "epika": 181,
       "name": "patriota",
-      "display": "Patriota"
+      "liryka": 56,
+      "display": "Patriota",
+      "dramat": 16
     },
     {
       "count": 249,
+      "epika": 121,
       "name": "noc",
-      "display": "Noc"
+      "liryka": 97,
+      "display": "Noc",
+      "dramat": 31
     },
     {
       "count": 249,
+      "epika": 213,
       "name": "zyd",
-      "display": "\u017byd"
+      "liryka": 23,
+      "display": "\u017byd",
+      "dramat": 13
     },
     {
       "count": 249,
+      "epika": 155,
       "name": "historia",
-      "display": "Historia"
+      "liryka": 51,
+      "display": "Historia",
+      "dramat": 43
     },
     {
       "count": 249,
+      "epika": 175,
       "name": "przyjazn",
-      "display": "Przyja\u017a\u0144"
+      "liryka": 37,
+      "display": "Przyja\u017a\u0144",
+      "dramat": 37
     },
     {
       "count": 248,
+      "epika": 164,
       "name": "tajemnica",
-      "display": "Tajemnica"
+      "liryka": 43,
+      "display": "Tajemnica",
+      "dramat": 41
     },
     {
       "count": 248,
+      "epika": 116,
       "name": "woda",
-      "display": "Woda"
+      "liryka": 121,
+      "display": "Woda",
+      "dramat": 11
     },
     {
       "count": 248,
+      "epika": 201,
       "name": "alkohol",
-      "display": "Alkohol"
+      "liryka": 37,
+      "display": "Alkohol",
+      "dramat": 10
     },
     {
       "count": 246,
+      "epika": 108,
       "name": "swiatlo",
-      "display": "\u015awiat\u0142o"
+      "liryka": 128,
+      "display": "\u015awiat\u0142o",
+      "dramat": 10
     },
     {
       "count": 244,
+      "epika": 165,
       "name": "podroz",
-      "display": "Podr\u00f3\u017c"
+      "liryka": 69,
+      "display": "Podr\u00f3\u017c",
+      "dramat": 10
     },
     {
       "count": 241,
+      "epika": 221,
       "name": "interes",
-      "display": "Interes"
+      "liryka": 6,
+      "display": "Interes",
+      "dramat": 14
     },
     {
       "count": 238,
+      "epika": 121,
       "name": "drzewo",
-      "display": "Drzewo"
+      "liryka": 100,
+      "display": "Drzewo",
+      "dramat": 17
     },
     {
       "count": 237,
+      "epika": 126,
       "name": "marzenie",
-      "display": "Marzenie"
+      "liryka": 71,
+      "display": "Marzenie",
+      "dramat": 40
     },
     {
       "count": 235,
+      "epika": 99,
       "name": "pozadanie",
-      "display": "Po\u017c\u0105danie"
+      "liryka": 101,
+      "display": "Po\u017c\u0105danie",
+      "dramat": 35
     },
     {
       "count": 232,
+      "epika": 165,
       "name": "kon",
-      "display": "Ko\u0144"
+      "liryka": 58,
+      "display": "Ko\u0144",
+      "dramat": 9
     },
     {
       "count": 228,
+      "epika": 108,
       "name": "wspomnienia",
-      "display": "Wspomnienia"
+      "liryka": 93,
+      "display": "Wspomnienia",
+      "dramat": 27
     },
     {
       "count": 228,
+      "epika": 143,
       "name": "przywodca",
-      "display": "Przyw\u00f3dca"
+      "liryka": 39,
+      "display": "Przyw\u00f3dca",
+      "dramat": 46
     },
     {
       "count": 227,
+      "epika": 165,
       "name": "zazdrosc",
-      "display": "Zazdro\u015b\u0107"
+      "liryka": 34,
+      "display": "Zazdro\u015b\u0107",
+      "dramat": 28
     },
     {
       "count": 225,
+      "epika": 216,
       "name": "handel",
-      "display": "Handel"
+      "liryka": 7,
+      "display": "Handel",
+      "dramat": 2
     },
     {
       "count": 222,
+      "epika": 145,
       "name": "muzyka",
-      "display": "Muzyka"
+      "liryka": 61,
+      "display": "Muzyka",
+      "dramat": 16
     },
     {
       "count": 220,
+      "epika": 132,
       "name": "pijanstwo",
-      "display": "Pija\u0144stwo"
+      "liryka": 71,
+      "display": "Pija\u0144stwo",
+      "dramat": 17
     },
     {
       "count": 220,
+      "epika": 148,
       "name": "slawa",
-      "display": "S\u0142awa"
+      "liryka": 61,
+      "display": "S\u0142awa",
+      "dramat": 11
     },
     {
       "count": 220,
+      "epika": 205,
       "name": "okrucienstwo",
-      "display": "Okrucie\u0144stwo"
+      "liryka": 9,
+      "display": "Okrucie\u0144stwo",
+      "dramat": 6
     },
     {
       "count": 219,
+      "epika": 99,
       "name": "tesknota",
-      "display": "T\u0119sknota"
+      "liryka": 114,
+      "display": "T\u0119sknota",
+      "dramat": 6
     },
     {
       "count": 218,
+      "epika": 139,
       "name": "szalenstwo",
-      "display": "Szale\u0144stwo"
+      "liryka": 25,
+      "display": "Szale\u0144stwo",
+      "dramat": 54
     },
     {
       "count": 218,
+      "epika": 160,
       "name": "niewola",
-      "display": "Niewola"
+      "liryka": 36,
+      "display": "Niewola",
+      "dramat": 22
     },
     {
       "count": 215,
+      "epika": 117,
       "name": "samobojstwo",
-      "display": "Samob\u00f3jstwo"
+      "liryka": 37,
+      "display": "Samob\u00f3jstwo",
+      "dramat": 61
     },
     {
       "count": 214,
+      "epika": 166,
       "name": "uroda",
-      "display": "Uroda"
+      "liryka": 40,
+      "display": "Uroda",
+      "dramat": 8
     },
     {
       "count": 214,
+      "epika": 153,
       "name": "rodzina",
-      "display": "Rodzina"
+      "liryka": 34,
+      "display": "Rodzina",
+      "dramat": 27
     },
     {
       "count": 213,
+      "epika": 182,
       "name": "honor",
-      "display": "Honor"
+      "liryka": 6,
+      "display": "Honor",
+      "dramat": 25
     },
     {
       "count": 213,
+      "epika": 140,
       "name": "spiew",
-      "display": "\u015apiew"
+      "liryka": 56,
+      "display": "\u015apiew",
+      "dramat": 17
     },
     {
       "count": 213,
+      "epika": 101,
       "name": "rozpacz",
-      "display": "Rozpacz"
+      "liryka": 57,
+      "display": "Rozpacz",
+      "dramat": 55
     },
     {
       "count": 211,
+      "epika": 176,
       "name": "list",
-      "display": "List"
+      "liryka": 17,
+      "display": "List",
+      "dramat": 18
     },
     {
       "count": 211,
+      "epika": 126,
       "name": "wzrok",
-      "display": "Wzrok"
+      "liryka": 59,
+      "display": "Wzrok",
+      "dramat": 26
     },
     {
       "count": 211,
+      "epika": 158,
       "name": "wies",
-      "display": "Wie\u015b"
+      "liryka": 36,
+      "display": "Wie\u015b",
+      "dramat": 17
     },
     {
       "count": 210,
+      "epika": 77,
       "name": "kwiaty",
-      "display": "Kwiaty"
+      "liryka": 111,
+      "display": "Kwiaty",
+      "dramat": 22
     },
     {
       "count": 208,
+      "epika": 166,
       "name": "pies",
-      "display": "Pies"
+      "liryka": 20,
+      "display": "Pies",
+      "dramat": 22
     },
     {
       "count": 205,
+      "epika": 156,
       "name": "klamstwo",
-      "display": "K\u0142amstwo"
+      "liryka": 29,
+      "display": "K\u0142amstwo",
+      "dramat": 20
     },
     {
       "count": 204,
+      "epika": 154,
       "name": "wierzenia",
-      "display": "Wierzenia"
+      "liryka": 17,
+      "display": "Wierzenia",
+      "dramat": 33
     },
     {
       "count": 203,
+      "epika": 127,
       "name": "flirt",
-      "display": "Flirt"
+      "liryka": 52,
+      "display": "Flirt",
+      "dramat": 24
     },
     {
       "count": 202,
+      "epika": 83,
       "name": "grob",
-      "display": "Gr\u00f3b"
+      "liryka": 98,
+      "display": "Gr\u00f3b",
+      "dramat": 21
     },
     {
       "count": 202,
+      "epika": 58,
       "name": "aniol",
-      "display": "Anio\u0142"
+      "liryka": 109,
+      "display": "Anio\u0142",
+      "dramat": 35
     },
     {
       "count": 201,
+      "epika": 138,
       "name": "wrog",
-      "display": "Wr\u00f3g"
+      "liryka": 50,
+      "display": "Wr\u00f3g",
+      "dramat": 13
     }
   ],
   "links": [
