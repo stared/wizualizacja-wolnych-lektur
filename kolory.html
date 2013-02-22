@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<head>
+  <title>Kolory Wolnych Lektur</title>
+  <meta name="description" content="Eksploracja kolorów występujących w książkach z bazy wolnelektury.pl.">
+  <meta name="keywords" content="wizualizacja,kolory,d3.js,książka,lektura,kolorystyka,barwa">
+  <meta name="author" content="Piotr Migdał">
+  <meta charset="utf-8">
+</head>
+<style>
+
+.color_point {
+  stroke: #000;
+  stroke-width: 0.5px;
+}
+
+.book_point {
+  fill: #0f0;
+  stroke: #000;
+  stroke-width: 0.5px;
+}
+
+.lightness_point {
+  stroke: #000;
+  stroke-width: 0.5px;
+}
+
+.aux_line {
+  stroke: #777;
+  stroke-width: 2px;
+}
+
+/*.saturation {
+  stroke: #000;
+  stroke-width: 0.5px;
+}*/
+
+/*.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+*/
+</style>
+<body>
+<script src="d3.v3.min.js"></script>
+<script>
+
+var width = 1000,
+    height = 800;
+
+// var color = d3.scale.category20();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+d3.json("colored_books.json", function(error, books) {
+
+
+  var book = books[5]
+
+  var rgb2x = function(r, g, b) {
+    var tot = r + g + b
+    if( tot != 0 ){
+        return (g / 2 + b) / tot // (0 * r + 0.5 * g + 1 * b) / tot
+    } else {
+      return 0.5
+    }
+  };
+
+  var rgb2y = function(r, g, b) {
+    var tot = r + g + b
+    if( tot != 0 ){
+        return (Math.sqrt(3) / 2) * (r + b) / tot  //  (Math.sqrt(3)/2 * r + 0 * g + Math.sqrt(3)/2 * b) / tot
+    } else {
+      return 1 / Math.sqrt(3)
+    }
+  };
+
+  var rgb2l = function(r, g, b) {
+    return (r + b + g) / (3 * 255)
+  };
+
+  // somewhat a hand-made function
+  // var rgb2s = function(r, g, b) {
+  //   var c = (Math.max(r, g, b) - Math.min(r, g, b)) / 255
+  //   if(c == 0) {
+  //     return 0
+  //   } else {
+  //     var l = rgb2l(r, g, b)
+  //     return (2/3) * c / (1 - Math.abs(2 *l - 1))
+  //   }
+  // };
+
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 346 * rgb2x(1, 0, 0))
+    .attr("y1", 50 + 346 * rgb2y(1, 0, 0))
+    .attr("x2", 50 + 346 * rgb2x(0, 1, 0))
+    .attr("y2", 50 + 346 * rgb2y(0, 1, 0))
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 346 * rgb2x(0, 1, 0))
+    .attr("y1", 50 + 346 * rgb2y(0, 1, 0))
+    .attr("x2", 50 + 346 * rgb2x(0, 0, 1))
+    .attr("y2", 50 + 346 * rgb2y(0, 0, 1))
+
+  svg.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50 + 346 * rgb2x(0, 0, 1))
+    .attr("y1", 50 + 346 * rgb2y(0, 0, 1))
+    .attr("x2", 50 + 346 * rgb2x(1, 0, 0))
+    .attr("y2", 50 + 346 * rgb2y(1, 0, 0))
+
+  var points = svg.selectAll(".color_point")
+      .data(book.colors)
+    
+  points.enter().append("circle")
+      .attr("class", "color_point")
+      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("cx", function(d) { return 50 + 346 * rgb2x(d.r, d.g, d.b); })
+      .attr("cy", function(d) { return 50 + 346 * rgb2y(d.r, d.g, d.b); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+  points.exit().remove();
+
+  svg.append("line")
+      .attr("class", "aux_line")
+      .attr("x1", 500)
+      .attr("y1", 50)
+      .attr("x2", 500)
+      .attr("y2", 50 + 300)
+
+  var lightness = svg.selectAll(".lightness_point")
+      .data(book.colors);
+
+  lightness.enter().append("circle")
+      .attr("class", "lightness_point")
+      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("cx", 500)
+      .attr("cy", function(d) { return 50 + 300 * (1 - rgb2l(d.r, d.g, d.b)); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+  lightness.exit().remove();
+
+
+  // var saturation = svg.selectAll(".saturation")
+  //     .data(data["w-pustynii-i-w-puszczy"])
+  //   .enter().append("circle")
+  //     .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+  //     .attr("cx", 600)
+  //     .attr("cy", function(d) { return 50 + 300 * (1 - rgb2s(d.r, d.g, d.b)); })
+  //     .style("fill", function(d) { return d.hex; });
+
+
+  var cover = svg.append("image")
+      .attr("xlink:href", book.cover)
+      .attr("x", 700)
+      .attr("y", 50)
+      .attr("width", 216)
+      .attr("height", 300);
+
+
+  var book_explorer = svg.append("g");
+
+  var expl_scale_x = d3.scale.log()
+      .domain([d3.min(books, function(d){ return d.word_count}),
+        d3.max(books, function(d){ return d.word_count})])
+      .range([30, 975]);
+
+  var expl_scale_y = d3.scale.log()
+      .domain([1, d3.max(books, function(d){ return d.color_count})])
+      .range([750, 400]);
+
+  var book_points = book_explorer.selectAll(".book_point")
+      .data(books)
+    .enter().append("circle")
+      .attr("class", "book_point")
+      .attr("r", 4)
+      .attr("cx", function(d){ return expl_scale_x(d.word_count) })
+      .attr("cy", function(d){ return expl_scale_y(d.color_count) })
+      .on("mouseover", function(d){ explorer_mouseover(d) })
+      .on("mouseout", function(d){ explorer_mouseout(d) })
+      .on("click", function(d){ explorer_click(d) });
+  
+  book_points.append("title")
+      .text(function(d){ return d.author + ": " + d.title; });
+
+  var explorer_mouseover = function(d){
+    return null
+  };
+
+  var explorer_mouseout = function(d){
+    return null
+  };
+
+  var explorer_click = function(book){
+
+    var points = svg.selectAll(".color_point")
+        .data(book.colors);
+
+    points.enter().append("circle")
+      .attr("class", "color_point");
+      // .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      // .attr("cx", function(d) { return 50 + 346 * rgb2x(d.r, d.g, d.b); })
+      // .attr("cy", function(d) { return 50 + 346 * rgb2y(d.r, d.g, d.b); })
+      // .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+    points
+      // .attr("class", "color_point")
+      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("cx", function(d) { return 50 + 346 * rgb2x(d.r, d.g, d.b); })
+      .attr("cy", function(d) { return 50 + 346 * rgb2y(d.r, d.g, d.b); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+    points.exit().remove();
+
+
+    var lightness = svg.selectAll(".lightness_point")
+      .data(book.colors);
+
+    lightness
+      .attr("class", "lightness_point")
+      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("cx", 500)
+      .attr("cy", function(d) { return 50 + 300 * (1 - rgb2l(d.r, d.g, d.b)); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+    lightness.enter().append("circle")
+      .attr("class", "lightness_point")
+      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("cx", 500)
+      .attr("cy", function(d) { return 50 + 300 * (1 - rgb2l(d.r, d.g, d.b)); })
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+
+    lightness.exit().remove();
+
+    cover.attr("xlink:href", book.cover);
+  };
+
+  // var node = svg.selectAll(".node")
+  //     .data(graph.nodes)
+  //   .enter().append("g")
+  //     .attr("class", "node")
+  //     .call(force.drag);
+
+  // node.append("circle")
+  //     .attr("r", 5)
+  //     .style("fill", function(d) { return color(d.group); });
+
+  // node.append("text")
+  //     .attr("x", 12)
+  //     .attr("dy", ".35em")
+  //     .attr("font-family", "Arial")
+  //     .attr("font-size", 10)
+  //     .style("fill", "#660000")
+  //     .text(function(d) { return d.name; });
+});
+
+</script>
