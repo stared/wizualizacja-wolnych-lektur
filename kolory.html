@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <head>
   <title>Kolory Wolnych Lektur</title>
-  <meta name="description" content="Eksploracja kolorów występujących w książkach z bazy wolnelektury.pl.">
+  <meta name="description" content="Eksploracja kolorów występujących w książkach ze zbioru wolnelektury.pl.">
   <meta name="keywords" content="wizualizacja,kolory,d3.js,książka,lektura,kolorystyka,barwa">
-  <meta name="author" content="Piotr Migdał">
+  <meta name="author" content="Marta Czarnocka-Cieciura,Piotr Migdał">
   <meta charset="utf-8">
 </head>
 <style>
 
-.color_point {
-  stroke: #000;
-  stroke-width: 0.5px;
-}
+  .color_point {
+    stroke: #000;
+    stroke-width: 0.5px;
+  }
 
-.book_point {
-  fill: #0f0;
-  stroke: #000;
-  stroke-width: 0.5px;
-}
+  .book_point {
+    fill: #0f0;
+    stroke: #000;
+    stroke-width: 0.5px;
+  }
 
-.book_point:hover {
-  fill: #0f0;
-  stroke: #000;
-  stroke-width: 1.5px;
-}
+  .book_point:hover {
+    fill: #0f0;
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
 
-.lightness_point {
-  stroke: #000;
-  stroke-width: 0.5px;
-}
+  .lightness_point {
+    stroke: #000;
+    stroke-width: 0.5px;
+  }
 
-.aux_line {
-  stroke: #777;
-  stroke-width: 2px;
-}
+  .aux_line {
+    stroke: #777;
+    stroke-width: 2px;
+  }
 
-div.tooltip {
-                position: absolute;
-                text-align: center;
-                width: 150px;
-            /*    height: 10px;
-*/                padding: 8px;
-                font: 10px sans-serif;
-                background: #ffff99;
-                border: solid 1px #aaa;
-                border-radius: 8px;
-                pointer-events: none;
-            }
+  text.legend {
+    font-family: Verdana;
+    font-size: 13px;
+    fill: #000;
+  }
 
-/*.saturation {
-  stroke: #000;
-  stroke-width: 0.5px;
-}*/
+  text.xticks {
+    font-family: Verdana;
+    font-size: 13px;
+    fill: #000;
+  }
 
-/*.link {
-  stroke: #999;
-  stroke-opacity: .6;
-}
-*/
+  text.yticks {
+    font-family: Verdana;
+    font-size: 13px;
+    fill: #000;
+  }
+
+  text.axis_label {
+    font-family: Verdana;
+    font-size: 16px;
+    fill: #000;
+  }
+
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    padding: 8px;
+    font: 10px sans-serif;
+    background: #ffff99;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
 </style>
-<body>
+<body></body>
 <script src="d3.v3.min.js"></script>
 <script>
 
@@ -72,9 +85,6 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 d3.json("colored_books.json", function(error, books) {
-
-
-//  var book = books[5]
 
   var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -103,38 +113,45 @@ d3.json("colored_books.json", function(error, books) {
     return (r + b + g) / (3 * 255)
   };
 
+  var color_triangle = svg.append("g")
+    .attr("class", "color_triangle");
 
-  svg.append("line")
+  color_triangle.append("line")
     .attr("class", "aux_line")
     .attr("x1", 50 + 346 * rgb2x(1, 0, 0))
     .attr("y1", 50 + 346 * rgb2y(1, 0, 0))
     .attr("x2", 50 + 346 * rgb2x(0, 1, 0))
-    .attr("y2", 50 + 346 * rgb2y(0, 1, 0))
+    .attr("y2", 50 + 346 * rgb2y(0, 1, 0));
 
-  svg.append("line")
+  color_triangle.append("line")
     .attr("class", "aux_line")
     .attr("x1", 50 + 346 * rgb2x(0, 1, 0))
     .attr("y1", 50 + 346 * rgb2y(0, 1, 0))
     .attr("x2", 50 + 346 * rgb2x(0, 0, 1))
-    .attr("y2", 50 + 346 * rgb2y(0, 0, 1))
+    .attr("y2", 50 + 346 * rgb2y(0, 0, 1));
 
-  svg.append("line")
+  color_triangle.append("line")
     .attr("class", "aux_line")
     .attr("x1", 50 + 346 * rgb2x(0, 0, 1))
     .attr("y1", 50 + 346 * rgb2y(0, 0, 1))
     .attr("x2", 50 + 346 * rgb2x(1, 0, 0))
-    .attr("y2", 50 + 346 * rgb2y(1, 0, 0))
+    .attr("y2", 50 + 346 * rgb2y(1, 0, 0));
 
+  var lightness_line = svg.append("g")
+    .attr("class", "lightness_line");
 
-  svg.append("line")
+  lightness_line.append("line")
       .attr("class", "aux_line")
       .attr("x1", 550)
       .attr("y1", 50)
       .attr("x2", 550)
-      .attr("y2", 50 + 300)
+      .attr("y2", 50 + 300);
 
 
-  var cover = svg.append("image")
+  var cover = svg.append("a")
+    .attr("xlink:href", "");
+
+  cover.append("image")
       .attr("xlink:href", "")
       .attr("x", 700)
       .attr("y", 50)
@@ -144,14 +161,62 @@ d3.json("colored_books.json", function(error, books) {
 
   var book_explorer = svg.append("g");
 
+
   var expl_scale_x = d3.scale.log()
       .domain([d3.min(books, function(d){ return d.word_count}),
         d3.max(books, function(d){ return d.word_count})])
-      .range([40, 900]);
+      .range([100, 900]);
 
   var expl_scale_y = d3.scale.log()
       .domain([1, d3.max(books, function(d){ return d.color_count})])
-      .range([750, 400]);
+      .range([700, 400]);
+
+  book_explorer.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 50)
+    .attr("y1", 700)
+    .attr("x2", 950)
+    .attr("y2", 700);
+
+  book_explorer.append("text")
+    .attr("class", "axis_label")
+    .attr("x", 850)
+    .attr("y", 745)
+    .style("text-anchor", "middle")
+    .text("liczba słów");
+
+  book_explorer.selectAll("text.xticks")
+    .data([10, 30, 100, 300, 1000, 3000, 10000, 30000, 100000, 300000])
+    .enter().append("text")
+      .attr("class", "legend")
+      .attr("x", function(d){ return expl_scale_x(d); })
+      .attr("y", 720)
+      .style("text-anchor", "middle")
+      .text(function(d){ return d; });
+
+  book_explorer.append("line")
+    .attr("class", "aux_line")
+    .attr("x1", 100)
+    .attr("y1", 750)
+    .attr("x2", 100)
+    .attr("y2", 380);
+
+  book_explorer.append("text")
+    .attr("class", "axis_label")
+    .attr("x", 60)
+    .attr("y", 490)
+    .attr("transform", "rotate(270 60,490)")
+    .style("text-anchor", "middle")
+    .text("liczba kolorów");
+
+  book_explorer.selectAll("text.yticks")
+    .data([1, 3, 10, 30, 100, 300])
+    .enter().append("text")
+      .attr("class", "legend")
+      .attr("x", 95)
+      .attr("y", function(d){ return expl_scale_y(d); })
+      .style("text-anchor", "end")
+      .text(function(d){ return d; });
 
   var book_points = book_explorer.selectAll(".book_point")
       .data(books)
@@ -163,15 +228,31 @@ d3.json("colored_books.json", function(error, books) {
       .style("fill", function(d) { 
         return d3.rgb(d.colors[0].r, d.colors[0].g, d.colors[0].b).toString();
       })
-      .on("mouseover", function(d){ explorer_mouseover(d) })
+      .on("mouseover", function(d){ mouseover(d) })
       .on("mousemove", function(d){ explorer_mousemove(d) })
-      .on("mouseout", function(d){ explorer_mouseout(d) })
+      .on("mouseout", function(d){ mouseout(d) })
       .on("click", function(d){ explorer_click(d) });
   
   // book_points.append("title")
   //     .text(function(d){ return d.author + ": " + d.title; });
 
-  var explorer_mouseover = function(d){
+  book_explorer.append("a")
+    .attr("xlink:href", "https://github.com/stared/wizualizacja-wolnych-lektur")
+    .append("text")
+      .attr("class", "legend")
+      .attr("x", 900)
+      .attr("y", 780)
+      .style("text-anchor", "end")
+      .style("text-decoration", "underline")
+      .text("CC BY Marta Czarnocka-Cieciura & Piotr Migdał (2013)");
+
+  var click_hint = book_explorer.append("text")
+      .attr("class", "legend")
+      .attr("x", 400)
+      .attr("y", 500)
+      .text("kliknij na kropkę!");   
+
+  var mouseover = function(d){
     div.transition()
       .duration(200)
       .style("opacity", 1);
@@ -181,11 +262,18 @@ d3.json("colored_books.json", function(error, books) {
   var explorer_mousemove = function(d){
     div
       .text(d.author + ": " + d.title)
-      .style("left", (d3.event.pageX ) + "px")
-      .style("top", (d3.event.pageY) + "px");
+      .style("left", d3.event.pageX + "px")
+      .style("top", d3.event.pageY + "px");
   };
 
-  var explorer_mouseout = function(d){
+  var color_mousemove = function(d){
+    div
+      .text(d.count + "x " + d.name)
+      .style("left", d3.event.pageX + "px")
+      .style("top", d3.event.pageY + "px");
+  };
+
+  var mouseout = function(d){
     div.transition()
       .duration(200)
       .style("opacity", 1e-6);
@@ -193,38 +281,50 @@ d3.json("colored_books.json", function(error, books) {
 
   var explorer_click = function(book){
 
+    click_hint.transition()
+      .duration(2000)
+      .style("fill-opacity", 0);
 
-    var points = svg.selectAll(".color_point")
+    var points = color_triangle.selectAll(".color_point")
         .data(book.colors);
 
     points.enter().append("circle")
       .attr("class", "color_point");
 
     points
-      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("r", function(d) { return 50 * Math.sqrt(d.count / Math.sqrt(book.word_count)); } )
       .attr("cx", function(d) { return 50 + 346 * rgb2x(d.r, d.g, d.b); })
       .attr("cy", function(d) { return 50 + 346 * rgb2y(d.r, d.g, d.b); })
-      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); })
+      .on("mouseover", function(d){ mouseover(d) })
+      .on("mousemove", function(d){ color_mousemove(d) })
+      .on("mouseout", function(d){ mouseout(d) });
 
     points.exit().remove();
 
 
-    var lightness = svg.selectAll(".lightness_point")
+    var lightness = lightness_line.selectAll(".lightness_point")
       .data(book.colors);
 
     lightness.enter().append("circle")
       .attr("class", "lightness_point");
 
     lightness
-      .attr("r", function(d) { return 4 * Math.sqrt(d.count); } )
+      .attr("r", function(d) { return 50 * Math.sqrt(d.count / Math.sqrt(book.word_count)); } )
       .attr("cx", 550)
       .attr("cy", function(d) { return 50 + 300 * (1 - rgb2l(d.r, d.g, d.b)); })
-      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); });
+      .style("fill", function(d) { return d3.rgb(d.r, d.g, d.b).toString(); })
+      .on("mouseover", function(d){ mouseover(d) })
+      .on("mousemove", function(d){ color_mousemove(d) })
+      .on("mouseout", function(d){ mouseout(d) });
 
     lightness.exit().remove();
 
 
-    cover.attr("xlink:href", book.cover);
+    cover
+      .attr("xlink:href", book.url)
+      .select("image")
+        .attr("xlink:href", book.cover);
   };
 
 });
