@@ -1,21 +1,24 @@
 wizualizacja-wolnych-lektur
 =========================
 
-Motywy i kolory [Wolnych Lektur](http://wolnelektury.pl/) w [D3.js](http://d3js.org/).
+Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizacja w [D3.js](http://d3js.org/).
 
-(Motifs and colours of "[free books](http://wolnelektury.pl/)", in [D3.js](http://d3js.org/).)
+(Motifs and colours of "[Free Books](http://wolnelektury.pl/)", a visualization in [D3.js](http://d3js.org/).)
 
 ## Zawartość
 
-* [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html)
-- mapa motywów literackich w postaci grafu (wierzchołki to 123 naczęściej występujących motywów, krawędzie - motywy często występujące razem)
-* [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - prawie gotowe
+* [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) - mapa motywów literackich w postaci grafu (wierzchołki to 123 naczęściej występujących motywów, krawędzie - motywy często występujące razem).
+* [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - interaktywna eksploracja kolorów i odcieni występującyh w lekturach.
 
 ## Co i jak?
 
 ### Motywy (Piotr Migdał)
 
+Książki z wolnych lektur są opatrzone anotacjami.
+
 TO DO
+
+Niejako rozwinięcie mojego poprzedniego projektu, https://github.com/stared/tag-graph-map-of-stackexchange/wiki.
 
 ### Kolory (Marta Czarnocka-Cieciura, Piotr Migdał)
 
