@@ -6,6 +6,7 @@
       "name": "kobieta",
       "liryka": 307,
       "display": "Kobieta",
+      "display-en": "Woman",
       "dramat": 201
     },
     {
@@ -14,6 +15,7 @@
       "name": "milosc",
       "liryka": 473,
       "display": "Mi\u0142o\u015b\u0107",
+      "display-en": "Love",
       "dramat": 203
     },
     {
@@ -22,6 +24,7 @@
       "name": "smierc",
       "liryka": 519,
       "display": "\u015amier\u0107",
+      "display-en": "Death",
       "dramat": 138
     },
     {
@@ -30,6 +33,7 @@
       "name": "obyczaje",
       "liryka": 117,
       "display": "Obyczaje",
+      "display-en": "Customs",
       "dramat": 111
     },
     {
@@ -38,6 +42,7 @@
       "name": "kondycja-ludzka",
       "liryka": 299,
       "display": "Kondycja ludzka",
+      "display-en": "Human situation",
       "dramat": 108
     },
     {
@@ -46,6 +51,7 @@
       "name": "pozycja-spoleczna",
       "liryka": 37,
       "display": "Pozycja spo\u0142eczna",
+      "display-en": "Social position",
       "dramat": 69
     },
     {
@@ -54,6 +60,7 @@
       "name": "mezczyzna",
       "liryka": 53,
       "display": "M\u0119\u017cczyzna",
+      "display-en": "Man",
       "dramat": 65
     },
     {
@@ -62,6 +69,7 @@
       "name": "bog",
       "liryka": 352,
       "display": "B\u00f3g",
+      "display-en": "God",
       "dramat": 96
     },
     {
@@ -70,6 +78,7 @@
       "name": "szlachcic",
       "liryka": 43,
       "display": "Szlachcic",
+      "display-en": "Nobleman",
       "dramat": 70
     },
     {
@@ -78,6 +87,7 @@
       "name": "sluga",
       "liryka": 40,
       "display": "S\u0142uga",
+      "display-en": "Servant",
       "dramat": 117
     },
     {
@@ -86,6 +96,7 @@
       "name": "religia",
       "liryka": 102,
       "display": "Religia",
+      "display-en": "Religion",
       "dramat": 24
     },
     {
@@ -94,6 +105,7 @@
       "name": "pieniadz",
       "liryka": 68,
       "display": "Pieni\u0105dz",
+      "display-en": "Money",
       "dramat": 49
     },
     {
@@ -102,6 +114,7 @@
       "name": "wladza",
       "liryka": 40,
       "display": "W\u0142adza",
+      "display-en": "Power",
       "dramat": 117
     },
     {
@@ -110,6 +123,7 @@
       "name": "praca",
       "liryka": 52,
       "display": "Praca",
+      "display-en": "Work",
       "dramat": 28
     },
     {
@@ -118,6 +132,7 @@
       "name": "walka",
       "liryka": 134,
       "display": "Walka",
+      "display-en": "Combat",
       "dramat": 27
     },
     {
@@ -126,6 +141,7 @@
       "name": "sen",
       "liryka": 237,
       "display": "Sen",
+      "display-en": "Sleep",
       "dramat": 64
     },
     {
@@ -134,6 +150,7 @@
       "name": "malzenstwo",
       "liryka": 32,
       "display": "Ma\u0142\u017ce\u0144stwo",
+      "display-en": "Marriage",
       "dramat": 89
     },
     {
@@ -142,6 +159,7 @@
       "name": "cierpienie",
       "liryka": 219,
       "display": "Cierpienie",
+      "display-en": "Suffering",
       "dramat": 81
     },
     {
@@ -150,6 +168,7 @@
       "name": "dziecko",
       "liryka": 107,
       "display": "Dziecko",
+      "display-en": "Child",
       "dramat": 76
     },
     {
@@ -158,6 +177,7 @@
       "name": "wojna",
       "liryka": 50,
       "display": "Wojna",
+      "display-en": "War",
       "dramat": 15
     },
     {
@@ -166,6 +186,7 @@
       "name": "cialo",
       "liryka": 241,
       "display": "Cia\u0142o",
+      "display-en": "Body",
       "dramat": 38
     },
     {
@@ -174,6 +195,7 @@
       "name": "ojciec",
       "liryka": 51,
       "display": "Ojciec",
+      "display-en": "Father",
       "dramat": 75
     },
     {
@@ -182,6 +204,7 @@
       "name": "zolnierz",
       "liryka": 57,
       "display": "\u017bo\u0142nierz",
+      "display-en": "Soldier",
       "dramat": 27
     },
     {
@@ -190,6 +213,7 @@
       "name": "lzy",
       "liryka": 136,
       "display": "\u0141zy",
+      "display-en": "Tears",
       "dramat": 51
     },
     {
@@ -198,6 +222,7 @@
       "name": "zona",
       "liryka": 80,
       "display": "\u017bona",
+      "display-en": "Wife",
       "dramat": 67
     },
     {
@@ -206,6 +231,7 @@
       "name": "miasto",
       "liryka": 84,
       "display": "Miasto",
+      "display-en": "City",
       "dramat": 9
     },
     {
@@ -214,6 +240,7 @@
       "name": "chlop",
       "liryka": 38,
       "display": "Ch\u0142op",
+      "display-en": "Peasant",
       "dramat": 53
     },
     {
@@ -222,6 +249,7 @@
       "name": "slowo",
       "liryka": 109,
       "display": "S\u0142owo",
+      "display-en": "Word",
       "dramat": 66
     },
     {
@@ -230,6 +258,7 @@
       "name": "zdrada",
       "liryka": 60,
       "display": "Zdrada",
+      "display-en": "Betrayal",
       "dramat": 48
     },
     {
@@ -238,6 +267,7 @@
       "name": "choroba",
       "liryka": 53,
       "display": "Choroba",
+      "display-en": "Illness",
       "dramat": 16
     },
     {
@@ -246,6 +276,7 @@
       "name": "bogactwo",
       "liryka": 69,
       "display": "Bogactwo",
+      "display-en": "Wealth",
       "dramat": 16
     },
     {
@@ -254,6 +285,7 @@
       "name": "ptak",
       "liryka": 138,
       "display": "Ptak",
+      "display-en": "Bird",
       "dramat": 43
     },
     {
@@ -262,6 +294,7 @@
       "name": "matka",
       "liryka": 73,
       "display": "Matka",
+      "display-en": "Mother",
       "dramat": 108
     },
     {
@@ -270,6 +303,7 @@
       "name": "starosc",
       "liryka": 105,
       "display": "Staro\u015b\u0107",
+      "display-en": "Old age",
       "dramat": 50
     },
     {
@@ -278,6 +312,7 @@
       "name": "ojczyzna",
       "liryka": 104,
       "display": "Ojczyzna",
+      "display-en": "Homeland",
       "dramat": 32
     },
     {
@@ -286,6 +321,7 @@
       "name": "strach",
       "liryka": 97,
       "display": "Strach",
+      "display-en": "Fear",
       "dramat": 61
     },
     {
@@ -294,6 +330,7 @@
       "name": "zemsta",
       "liryka": 46,
       "display": "Zemsta",
+      "display-en": "Revenge",
       "dramat": 63
     },
     {
@@ -302,6 +339,7 @@
       "name": "duch",
       "liryka": 177,
       "display": "Duch",
+      "display-en": "Spirit",
       "dramat": 95
     },
     {
@@ -310,6 +348,7 @@
       "name": "grzech",
       "liryka": 128,
       "display": "Grzech",
+      "display-en": "Sin",
       "dramat": 72
     },
     {
@@ -318,6 +357,7 @@
       "name": "krew",
       "liryka": 77,
       "display": "Krew",
+      "display-en": "Blood",
       "dramat": 60
     },
     {
@@ -326,6 +366,7 @@
       "name": "kara",
       "liryka": 95,
       "display": "Kara",
+      "display-en": "Punishment",
       "dramat": 76
     },
     {
@@ -334,6 +375,7 @@
       "name": "poeta",
       "liryka": 172,
       "display": "Poeta",
+      "display-en": "Poet",
       "dramat": 63
     },
     {
@@ -342,6 +384,7 @@
       "name": "jedzenie",
       "liryka": 39,
       "display": "Jedzenie",
+      "display-en": "Food",
       "dramat": 21
     },
     {
@@ -350,6 +393,7 @@
       "name": "rycerz",
       "liryka": 46,
       "display": "Rycerz",
+      "display-en": "Knight",
       "dramat": 24
     },
     {
@@ -358,6 +402,7 @@
       "name": "mlodosc",
       "liryka": 84,
       "display": "M\u0142odo\u015b\u0107",
+      "display-en": "Youth",
       "dramat": 67
     },
     {
@@ -366,6 +411,7 @@
       "name": "ksiadz",
       "liryka": 68,
       "display": "Ksi\u0105dz",
+      "display-en": "Priest",
       "dramat": 77
     },
     {
@@ -374,6 +420,7 @@
       "name": "krol",
       "liryka": 31,
       "display": "Kr\u00f3l",
+      "display-en": "King",
       "dramat": 54
     },
     {
@@ -382,6 +429,7 @@
       "name": "obraz-swiata",
       "liryka": 137,
       "display": "Obraz \u015bwiata",
+      "display-en": "View of the World",
       "dramat": 52
     },
     {
@@ -390,6 +438,7 @@
       "name": "polityka",
       "liryka": 22,
       "display": "Polityka",
+      "display-en": "Politics",
       "dramat": 11
     },
     {
@@ -398,6 +447,7 @@
       "name": "los",
       "liryka": 111,
       "display": "Los",
+      "display-en": "Fate",
       "dramat": 61
     },
     {
@@ -406,6 +456,7 @@
       "name": "stroj",
       "liryka": 35,
       "display": "Str\u00f3j",
+      "display-en": "Outfit",
       "dramat": 18
     },
     {
@@ -414,6 +465,7 @@
       "name": "modlitwa",
       "liryka": 126,
       "display": "Modlitwa",
+      "display-en": "Prayer",
       "dramat": 48
     },
     {
@@ -422,6 +474,7 @@
       "name": "poezja",
       "liryka": 133,
       "display": "Poezja",
+      "display-en": "Poetry",
       "dramat": 48
     },
     {
@@ -430,6 +483,7 @@
       "name": "trup",
       "liryka": 127,
       "display": "Trup",
+      "display-en": "Corpse",
       "dramat": 52
     },
     {
@@ -438,6 +492,7 @@
       "name": "dom",
       "liryka": 57,
       "display": "Dom",
+      "display-en": "House",
       "dramat": 25
     },
     {
@@ -446,6 +501,7 @@
       "name": "smiech",
       "liryka": 56,
       "display": "\u015amiech",
+      "display-en": "Laughter",
       "dramat": 36
     },
     {
@@ -454,6 +510,7 @@
       "name": "bieda",
       "liryka": 81,
       "display": "Bieda",
+      "display-en": "Poverty",
       "dramat": 15
     },
     {
@@ -462,6 +519,7 @@
       "name": "przemiana",
       "liryka": 73,
       "display": "Przemiana",
+      "display-en": "Transformation",
       "dramat": 39
     },
     {
@@ -470,6 +528,7 @@
       "name": "czary",
       "liryka": 56,
       "display": "Czary",
+      "display-en": "Witchcraft",
       "dramat": 25
     },
     {
@@ -478,6 +537,7 @@
       "name": "przemoc",
       "liryka": 35,
       "display": "Przemoc",
+      "display-en": "Violence",
       "dramat": 40
     },
     {
@@ -486,6 +546,7 @@
       "name": "podstep",
       "liryka": 11,
       "display": "Podst\u0119p",
+      "display-en": "Deception",
       "dramat": 47
     },
     {
@@ -494,6 +555,7 @@
       "name": "kochanek",
       "liryka": 126,
       "display": "Kochanek",
+      "display-en": "Lover",
       "dramat": 50
     },
     {
@@ -502,6 +564,7 @@
       "name": "maz",
       "liryka": 55,
       "display": "M\u0105\u017c",
+      "display-en": "Mąż",
       "dramat": 43
     },
     {
@@ -510,6 +573,7 @@
       "name": "natura",
       "liryka": 153,
       "display": "Natura",
+      "display-en": "Nature",
       "dramat": 15
     },
     {
@@ -518,6 +582,7 @@
       "name": "syn",
       "liryka": 32,
       "display": "Syn",
+      "display-en": "Son",
       "dramat": 56
     },
     {
@@ -526,6 +591,7 @@
       "name": "madrosc",
       "liryka": 53,
       "display": "M\u0105dro\u015b\u0107",
+      "display-en": "Wisdom",
       "dramat": 28
     },
     {
@@ -534,6 +600,7 @@
       "name": "szczescie",
       "liryka": 52,
       "display": "Szcz\u0119\u015bcie",
+      "display-en": "Happiness",
       "dramat": 28
     },
     {
@@ -542,6 +609,7 @@
       "name": "zwierzeta",
       "liryka": 59,
       "display": "Zwierz\u0119ta",
+      "display-en": "Animals",
       "dramat": 19
     },
     {
@@ -550,6 +618,7 @@
       "name": "nauka",
       "liryka": 24,
       "display": "Nauka",
+      "display-en": "Science",
       "dramat": 57
     },
     {
@@ -558,6 +627,7 @@
       "name": "dusza",
       "liryka": 121,
       "display": "Dusza",
+      "display-en": "Soul",
       "dramat": 47
     },
     {
@@ -566,6 +636,7 @@
       "name": "przemijanie",
       "liryka": 183,
       "display": "Przemijanie",
+      "display-en": "Passing",
       "dramat": 31
     },
     {
@@ -574,6 +645,7 @@
       "name": "polak",
       "liryka": 52,
       "display": "Polak",
+      "display-en": "Pole",
       "dramat": 41
     },
     {
@@ -582,6 +654,7 @@
       "name": "czas",
       "liryka": 103,
       "display": "Czas",
+      "display-en": "Time",
       "dramat": 35
     },
     {
@@ -590,6 +663,7 @@
       "name": "zabawa",
       "liryka": 51,
       "display": "Zabawa",
+      "display-en": "Play",
       "dramat": 29
     },
     {
@@ -598,6 +672,7 @@
       "name": "serce",
       "liryka": 80,
       "display": "Serce",
+      "display-en": "Heart",
       "dramat": 57
     },
     {
@@ -606,6 +681,7 @@
       "name": "cnota",
       "liryka": 58,
       "display": "Cnota",
+      "display-en": "Virtue",
       "dramat": 34
     },
     {
@@ -614,6 +690,7 @@
       "name": "pozory",
       "liryka": 48,
       "display": "Pozory",
+      "display-en": "False looks",
       "dramat": 32
     },
     {
@@ -622,6 +699,7 @@
       "name": "sprawiedliwosc",
       "liryka": 11,
       "display": "Sprawiedliwo\u015b\u0107",
+      "display-en": "Justice",
       "dramat": 60
     },
     {
@@ -630,6 +708,7 @@
       "name": "oko",
       "liryka": 78,
       "display": "Oko",
+      "display-en": "eye",
       "dramat": 50
     },
     {
@@ -638,6 +717,7 @@
       "name": "ksiazka",
       "liryka": 44,
       "display": "Ksi\u0105\u017cka",
+      "display-en": "Book",
       "dramat": 26
     },
     {
@@ -646,6 +726,7 @@
       "name": "patriota",
       "liryka": 56,
       "display": "Patriota",
+      "display-en": "Patriot",
       "dramat": 16
     },
     {
@@ -654,6 +735,7 @@
       "name": "noc",
       "liryka": 97,
       "display": "Noc",
+      "display-en": "Night",
       "dramat": 31
     },
     {
@@ -662,6 +744,7 @@
       "name": "zyd",
       "liryka": 23,
       "display": "\u017byd",
+      "display-en": "Jew",
       "dramat": 13
     },
     {
@@ -670,6 +753,7 @@
       "name": "historia",
       "liryka": 51,
       "display": "Historia",
+      "display-en": "History",
       "dramat": 43
     },
     {
@@ -678,6 +762,7 @@
       "name": "przyjazn",
       "liryka": 37,
       "display": "Przyja\u017a\u0144",
+      "display-en": "Friendship",
       "dramat": 37
     },
     {
@@ -686,6 +771,7 @@
       "name": "tajemnica",
       "liryka": 43,
       "display": "Tajemnica",
+      "display-en": "Secret",
       "dramat": 41
     },
     {
@@ -694,6 +780,7 @@
       "name": "woda",
       "liryka": 121,
       "display": "Woda",
+      "display-en": "Water",
       "dramat": 11
     },
     {
@@ -702,6 +789,7 @@
       "name": "alkohol",
       "liryka": 37,
       "display": "Alkohol",
+      "display-en": "Alcohol",
       "dramat": 10
     },
     {
@@ -710,6 +798,7 @@
       "name": "swiatlo",
       "liryka": 128,
       "display": "\u015awiat\u0142o",
+      "display-en": "Light",
       "dramat": 10
     },
     {
@@ -718,6 +807,7 @@
       "name": "podroz",
       "liryka": 69,
       "display": "Podr\u00f3\u017c",
+      "display-en": "Travel",
       "dramat": 10
     },
     {
@@ -726,6 +816,7 @@
       "name": "interes",
       "liryka": 6,
       "display": "Interes",
+      "display-en": "Business",
       "dramat": 14
     },
     {
@@ -734,6 +825,7 @@
       "name": "drzewo",
       "liryka": 100,
       "display": "Drzewo",
+      "display-en": "Tree",
       "dramat": 17
     },
     {
@@ -742,6 +834,7 @@
       "name": "marzenie",
       "liryka": 71,
       "display": "Marzenie",
+      "display-en": "Dream",
       "dramat": 40
     },
     {
@@ -750,6 +843,7 @@
       "name": "pozadanie",
       "liryka": 101,
       "display": "Po\u017c\u0105danie",
+      "display-en": "Lust",
       "dramat": 35
     },
     {
@@ -758,6 +852,7 @@
       "name": "kon",
       "liryka": 58,
       "display": "Ko\u0144",
+      "display-en": "Horse",
       "dramat": 9
     },
     {
@@ -766,6 +861,7 @@
       "name": "wspomnienia",
       "liryka": 93,
       "display": "Wspomnienia",
+      "display-en": "Memories",
       "dramat": 27
     },
     {
@@ -774,6 +870,7 @@
       "name": "przywodca",
       "liryka": 39,
       "display": "Przyw\u00f3dca",
+      "display-en": "Leader",
       "dramat": 46
     },
     {
@@ -782,6 +879,7 @@
       "name": "zazdrosc",
       "liryka": 34,
       "display": "Zazdro\u015b\u0107",
+      "display-en": "Envy",
       "dramat": 28
     },
     {
@@ -790,6 +888,7 @@
       "name": "handel",
       "liryka": 7,
       "display": "Handel",
+      "display-en": "Trade",
       "dramat": 2
     },
     {
@@ -798,6 +897,7 @@
       "name": "muzyka",
       "liryka": 61,
       "display": "Muzyka",
+      "display-en": "Music",
       "dramat": 16
     },
     {
@@ -806,6 +906,7 @@
       "name": "pijanstwo",
       "liryka": 71,
       "display": "Pija\u0144stwo",
+      "display-en": "Drunkenness",
       "dramat": 17
     },
     {
@@ -814,6 +915,7 @@
       "name": "slawa",
       "liryka": 61,
       "display": "S\u0142awa",
+      "display-en": "Fame",
       "dramat": 11
     },
     {
@@ -822,6 +924,7 @@
       "name": "okrucienstwo",
       "liryka": 9,
       "display": "Okrucie\u0144stwo",
+      "display-en": "Cruelty",
       "dramat": 6
     },
     {
@@ -830,6 +933,7 @@
       "name": "tesknota",
       "liryka": 114,
       "display": "T\u0119sknota",
+      "display-en": "Longing",
       "dramat": 6
     },
     {
@@ -838,6 +942,7 @@
       "name": "szalenstwo",
       "liryka": 25,
       "display": "Szale\u0144stwo",
+      "display-en": "Insanity",
       "dramat": 54
     },
     {
@@ -846,6 +951,7 @@
       "name": "niewola",
       "liryka": 36,
       "display": "Niewola",
+      "display-en": "Slavery",
       "dramat": 22
     },
     {
@@ -854,6 +960,7 @@
       "name": "samobojstwo",
       "liryka": 37,
       "display": "Samob\u00f3jstwo",
+      "display-en": "Suicide",
       "dramat": 61
     },
     {
@@ -862,6 +969,7 @@
       "name": "uroda",
       "liryka": 40,
       "display": "Uroda",
+      "display-en": "Good looks",
       "dramat": 8
     },
     {
@@ -870,6 +978,7 @@
       "name": "rodzina",
       "liryka": 34,
       "display": "Rodzina",
+      "display-en": "Family",
       "dramat": 27
     },
     {
@@ -878,6 +987,7 @@
       "name": "honor",
       "liryka": 6,
       "display": "Honor",
+      "display-en": "Honour",
       "dramat": 25
     },
     {
@@ -886,6 +996,7 @@
       "name": "spiew",
       "liryka": 56,
       "display": "\u015apiew",
+      "display-en": "Singing",
       "dramat": 17
     },
     {
@@ -894,6 +1005,7 @@
       "name": "rozpacz",
       "liryka": 57,
       "display": "Rozpacz",
+      "display-en": "Despair",
       "dramat": 55
     },
     {
@@ -902,6 +1014,7 @@
       "name": "list",
       "liryka": 17,
       "display": "List",
+      "display-en": "Letter",
       "dramat": 18
     },
     {
@@ -910,6 +1023,7 @@
       "name": "wzrok",
       "liryka": 59,
       "display": "Wzrok",
+      "display-en": "Sight",
       "dramat": 26
     },
     {
@@ -918,6 +1032,7 @@
       "name": "wies",
       "liryka": 36,
       "display": "Wie\u015b",
+      "display-en": "Village",
       "dramat": 17
     },
     {
@@ -926,6 +1041,7 @@
       "name": "kwiaty",
       "liryka": 111,
       "display": "Kwiaty",
+      "display-en": "Flowers",
       "dramat": 22
     },
     {
@@ -934,6 +1050,7 @@
       "name": "pies",
       "liryka": 20,
       "display": "Pies",
+      "display-en": "Dog",
       "dramat": 22
     },
     {
@@ -942,6 +1059,7 @@
       "name": "klamstwo",
       "liryka": 29,
       "display": "K\u0142amstwo",
+      "display-en": "Lie",
       "dramat": 20
     },
     {
@@ -950,6 +1068,7 @@
       "name": "wierzenia",
       "liryka": 17,
       "display": "Wierzenia",
+      "display-en": "Beliefs",
       "dramat": 33
     },
     {
@@ -958,6 +1077,7 @@
       "name": "flirt",
       "liryka": 52,
       "display": "Flirt",
+      "display-en": "Flirt",
       "dramat": 24
     },
     {
@@ -966,6 +1086,7 @@
       "name": "grob",
       "liryka": 98,
       "display": "Gr\u00f3b",
+      "display-en": "Grave",
       "dramat": 21
     },
     {
@@ -974,6 +1095,7 @@
       "name": "aniol",
       "liryka": 109,
       "display": "Anio\u0142",
+      "display-en": "Angel",
       "dramat": 35
     },
     {
@@ -982,6 +1104,7 @@
       "name": "wrog",
       "liryka": 50,
       "display": "Wr\u00f3g",
+      "display-en": "Enemy",
       "dramat": 13
     }
   ],
