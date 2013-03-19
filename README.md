@@ -5,14 +5,19 @@ Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizac
 
 (Motifs and colours of "[Free Books](http://wolnelektury.pl/)", a visualization in [D3.js](http://d3js.org/).)
 
-## Zawartość
+![Themes Screenshot](wolnelektury_themes_screenshot.png)
+
+## Zawartość / Content
 
 * [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) - mapa motywów literackich w postaci grafu (wierzchołki to 123 najczęściej występujących motywów, krawędzie - motywy często występujące razem).
+* [Themes of Polish Books - an Interactive Map](http://stared.github.com/wizualizacja-wolnych-polish_books_themes.html) (English version of the above) - a graph where nodes are themes (or motifs), and links are their frequent co-occurrences. 
 * [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - interaktywna eksploracja kolorów i odcieni występujących w lekturach.
 
 ## Co i jak?
 
 ### [Motywy](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) (Piotr Migdał)
+
+[English version coming soon(er or later)]
 
 Książki z Wolnych Lektur są opatrzone adnotacjami dotyczącymi występujących motywów (np. "Kobieta", "Bóg", "Sen"...). Zaciekawiło mnie zarówno jakimi, jak i - jakie kombinacje są szczególnie częste.
 
