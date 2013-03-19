@@ -7,20 +7,29 @@ Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizac
 
 ## Zawartość
 
-* [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) - mapa motywów literackich w postaci grafu (wierzchołki to 123 naczęściej występujących motywów, krawędzie - motywy często występujące razem).
-* [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - interaktywna eksploracja kolorów i odcieni występującyh w lekturach.
+* [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) - mapa motywów literackich w postaci grafu (wierzchołki to 123 najczęściej występujących motywów, krawędzie - motywy często występujące razem).
+* [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - interaktywna eksploracja kolorów i odcieni występujących w lekturach.
 
 ## Co i jak?
 
-### Motywy (Piotr Migdał)
+### [Motywy](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) (Piotr Migdał)
 
-Książki z Wolnych Lektur są opatrzone anotacjami dotyczącymi występujących motywów. Zaciekawiło mnie zarówno jakimi, jak i - jakie kombinacje są szczególnie częste.
+Książki z Wolnych Lektur są opatrzone adnotacjami dotyczącymi występujących motywów (np. "Kobieta", "Bóg", "Sen"...). Zaciekawiło mnie zarówno jakimi, jak i - jakie kombinacje są szczególnie częste.
 
-ROZWINĄĆ - TO DO
+Wybrałem motywy, które występują co najmniej 200 razy, zliczyłem jak często występuje w zależności od rodzaju literackiego (tj. liryka, epika, dramat) oraz stworzyłem połączenia miedzy nimi na podstawie częstości współwystępowania motywów.
 
-Niejako rozwinięcie mojego poprzedniego projektu, https://github.com/stared/tag-graph-map-of-stackexchange/wiki.
+Tj. wszystkie połączenia między motywami są stworzone automatycznie, w oparciu o zbiór danych, bez ludzkiej ingerencji. Co więcej, połączone motywy mogą, ale nie muszą, być powiązane semantycznie. Daje to wgląd w połączenia i kompozycje tematyczne - zarówno te "narzucające się", jak i te, których nie sposób by się domyślić.
 
-### Kolory (Marta Czarnocka-Cieciura, Piotr Migdał)
+Dokładna wzór na współwystępowanie motywów (tu: `motyw1` i `motyw2`):
+ 
+    \sum_i #motyw1(i) * #motyw2(i) / #motywy(i),
+
+gdzie suma przebiega po wszystkich lekturach, `#motyw1(i)` to liczna wystąpień motywu `1` w lekturze `i` (analogicznie dla `#motyw2(i)`), `#motywy(i)` to całkowita liczba wystąpień motywów w danej lekturze. [Owa wielkość statystyczna](http://stats.stackexchange.com/questions/6047) przyjmuje wartość większą od 1 gdy motywy współwystępują częściej, niż tyle co "przez przypadek". Stąd też grubość krawędzi to owa wielkość minus jeden.
+
+Niejako rozwinięcie mojego poprzedniego projektu, https://github.com/stared/tag-graph-map-of-stackexchange/wiki, w którym to patrzę na powiązania między tagami związanymi z programowaniem (a także dziedzinami fizyki, kognitywistyki i nie tylko).
+
+
+### [Kolory](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) (Marta Czarnocka-Cieciura, Piotr Migdał)
 
 Jak przedstawić graficznie treść książki? Startując w konkursie na wizualizację Wolnych Lektur, postanowiliśmy skupić się na kolorystyce, a dokładniej wyłowić z tekstów wszelkie określenia dotyczące barw i przedstawić je w formie graficznej.
 
