@@ -10,7 +10,7 @@ Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizac
 ## Zawartość / Content
 
 * [Motywy Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) - mapa motywów literackich w postaci grafu (wierzchołki to 123 najczęściej występujących motywów, krawędzie - motywy często występujące razem).
-* [Themes of Polish Books - an Interactive Map](http://stared.github.com/wizualizacja-wolnych-polish_books_themes.html) (English version of the above) - a graph where nodes are themes (or motifs), and links are their frequent co-occurrences. 
+* [Themes of Polish Books - an Interactive Map](http://stared.github.com/wizualizacja/wolnych-polish_books_themes.html) (English version of the above) - a graph where nodes are themes (or motifs), and links are their frequent co-occurrences. 
 * [Kolory Wolnych Lektur](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) - interaktywna eksploracja kolorów i odcieni występujących w lekturach.
 
 ## Co i jak?
