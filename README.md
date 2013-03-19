@@ -1,11 +1,11 @@
 wizualizacja-wolnych-lektur
 =========================
 
+![Themes Screenshot](wolnelektury_themes_screenshot.png)
+
 Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizacja w [D3.js](http://d3js.org/).
 
-(Motifs and colours of "[Free Books](http://wolnelektury.pl/)", a visualization in [D3.js](http://d3js.org/).)
-
-![Themes Screenshot](wolnelektury_themes_screenshot.png)
+(Motifs and colours of "[Free Readings](http://wolnelektury.pl/)", a visualization in [D3.js](http://d3js.org/).)
 
 ## Zawartość / Content
 
@@ -15,11 +15,11 @@ Motywy i kolory ze zbioru [Wolnych Lektur](http://wolnelektury.pl/) - wizualizac
 
 ## Co i jak?
 
-### [Motywy](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html) (Piotr Migdał)
+### [Motywy](http://stared.github.com/wizualizacja-wolnych-lektur/motywy_wolnych_lektur.html)/[Themes](http://stared.github.com/wizualizacja-wolnych-lektur/polish_books_themes.html) (Piotr Migdał)
 
-[English version coming soon(er or later)]
+#### Polish
 
-Książki z Wolnych Lektur są opatrzone adnotacjami dotyczącymi występujących motywów (np. "Kobieta", "Bóg", "Sen"...). Zaciekawiło mnie zarówno jakimi, jak i - jakie kombinacje są szczególnie częste.
+Książki z Wolnych Lektur są opatrzone adnotacjami dotyczącymi występujących motywów (np. "Kobieta", "Miłość", "Sen"). Zaciekawiło mnie zarówno jakimi, jak i - jakie kombinacje są szczególnie częste.
 
 Wybrałem motywy, które występują co najmniej 200 razy, zliczyłem jak często występuje w zależności od rodzaju literackiego (tj. liryka, epika, dramat) oraz stworzyłem połączenia miedzy nimi na podstawie częstości współwystępowania motywów.
 
@@ -32,6 +32,23 @@ Dokładna wzór na współwystępowanie motywów (tu: `motyw1` i `motyw2`):
 gdzie suma przebiega po wszystkich lekturach, `#motyw1(i)` to liczna wystąpień motywu `1` w lekturze `i` (analogicznie dla `#motyw2(i)`), `#motywy(i)` to całkowita liczba wystąpień motywów w danej lekturze. [Owa wielkość statystyczna](http://stats.stackexchange.com/questions/6047) przyjmuje wartość większą od 1 gdy motywy współwystępują częściej, niż tyle co "przez przypadek". Stąd też grubość krawędzi to owa wielkość minus jeden.
 
 Niejako rozwinięcie mojego poprzedniego projektu, https://github.com/stared/tag-graph-map-of-stackexchange/wiki, w którym to patrzę na powiązania między tagami związanymi z programowaniem (a także dziedzinami fizyki, kognitywistyki i nie tylko).
+
+
+#### English 
+
+Books from Wolne Lektury (Free Readings) are annotated with themes, which they contain (e.g. "Woman", "Love", "Sleep"). I was curious which themes are the most prevalent and... in which combinations.
+
+I selected themes that occur in the collection of books at least 200 times (there are 123 such) and I counted how each theme is distributed among the major forms of literature (i.e.: novel, poem, drama). Additionally, I connected with links such themes that co-occur very frequently.
+
+That is, all connections are automatically generated, based on the dataset, without any manual manipulation. In particular, linked themes can be, but not have to be, related semantically. It gives an insight into association of themes and motifs not only on the basis of their meaning, but also - their popular compositions (and some of them may be surprising!). 
+
+The exact formula for the quantification of the co-occurrence (here: for `theme1` and `theme2`) reads
+ 
+    \sum_i #theme1(i) * #theme2(i) / #themes(i),
+
+where we sum over all books; `#theme1(i)` is the number of occurrences of `theme1` in the book `i` (and analogously for `#theme2(i)`), `#themes(i)` is the number of all theme occurrences in the same book. Such statistical quantity, which is a variant of [observed to expected ratio](http://stats.stackexchange.com/questions/6047) takes values greater than 1 when two themes co-occur more frequently than by random chance. Thus, the link thickness is this quantity minus one.
+
+In some sense it is a further part of my former project https://github.com/stared/tag-graph-map-of-stackexchange/wiki, in which I am generating maps of programming concepts (from Stack Overflow) and other disciplines (e.g. physics, cognitive science, ...).
 
 
 ### [Kolory](http://stared.github.com/wizualizacja-wolnych-lektur/kolory.html) (Marta Czarnocka-Cieciura, Piotr Migdał)
