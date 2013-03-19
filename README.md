@@ -66,3 +66,4 @@ Mamy nadzieję, że Czytelnikom przypadnie do gustu taki sposób wizualizacji Wo
 ## Licencja
 
 * [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/)
+(nie dotyczy komponetnów, które mogą być objęte inną licencją)
