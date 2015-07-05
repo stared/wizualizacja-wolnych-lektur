@@ -320,14 +320,14 @@ d3.json("colored_books.json", function(error, books) {
 
     lightness.exit().remove();
 
-    var cover = book.url.split(/\//);
-    cover = cover[cover.length - 2];
-    cover = "http://wolnelektury.pl/media/book/cover/" + cover + ".jpg";
+    var coverImg = book.url.split(/\//);
+    coverImg = coverImg[coverImg.length - 2];
+    coverImg = "http://wolnelektury.pl/media/book/cover/" + coverImg + ".jpg";
 
     cover
       .attr("xlink:href", book.url)
       .select("image")
-        .attr("xlink:href", cover);
+        .attr("xlink:href", coverImg);
   };
 
 });
